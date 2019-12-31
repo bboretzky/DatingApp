@@ -11,7 +11,9 @@ import { BsDropdownModule } from "ngx-bootstrap/dropdown";
 import { TabsModule } from "ngx-bootstrap/tabs";
 import { JwtModule } from "@auth0/angular-jwt";
 import { NgxGalleryModule } from "ngx-gallery";
+import { FileUploadModule } from "ng2-file-upload";
 
+import { PhotoEditorComponent } from "./members/photo-editor/photo-editor.component";
 import { MemberEditComponent } from "./members/member-edit/member-edit.component";
 import { MemberListResolver } from "./_resolvers/member-list.resolver";
 import { MemberDetailResolver } from "./_resolvers/member-detail.resolver";
@@ -55,7 +57,8 @@ export class CustomHammerConfig extends HammerGestureConfig {
     MessagesComponent,
     MemberCardComponent,
     MemberDetailComponent,
-    MemberEditComponent
+    MemberEditComponent,
+    PhotoEditorComponent
   ],
   imports: [
     BrowserModule,
@@ -71,7 +74,8 @@ export class CustomHammerConfig extends HammerGestureConfig {
         blacklistedRoutes: ["localhost:5000/api/auth/"]
       }
     }),
-    NgxGalleryModule
+    NgxGalleryModule,
+    FileUploadModule
   ],
   providers: [
     AuthService,
