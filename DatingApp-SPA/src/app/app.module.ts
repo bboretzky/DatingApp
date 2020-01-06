@@ -15,6 +15,8 @@ import { NgxGalleryModule } from "ngx-gallery";
 import { FileUploadModule } from "ng2-file-upload";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { TimeAgoPipe } from "time-ago-pipe";
+import { PaginationModule } from "ngx-bootstrap/pagination";
+import { ButtonsModule } from "ngx-bootstrap/buttons";
 
 import { PhotoEditorComponent } from "./members/photo-editor/photo-editor.component";
 import { MemberEditComponent } from "./members/member-edit/member-edit.component";
@@ -70,9 +72,11 @@ export class CustomHammerConfig extends HammerGestureConfig {
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    ButtonsModule.forRoot(),
     BsDropdownModule.forRoot(),
     BsDatepickerModule.forRoot(),
     TabsModule.forRoot(),
+    PaginationModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     JwtModule.forRoot({
       config: {
