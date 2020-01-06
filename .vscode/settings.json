@@ -1,0 +1,9 @@
+{
+    "prettier.quoteProps": "preserve",
+    "editor.autoClosingOvertype": "preserve",
+    "editor.autoClosingQuotes": "preserve",
+    "editor.autoSurround": "preserve",
+    "editor.formatOnSave": true,
+    "prettier.tabWidth": 4,
+    "jsxSingleQuote": false
+}
