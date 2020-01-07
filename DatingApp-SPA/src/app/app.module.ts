@@ -18,6 +18,7 @@ import { TimeAgoPipe } from "time-ago-pipe";
 import { PaginationModule } from "ngx-bootstrap/pagination";
 import { ButtonsModule } from "ngx-bootstrap/buttons";
 
+import { ListsResolver } from "./_resolvers/lists.resolver";
 import { PhotoEditorComponent } from "./members/photo-editor/photo-editor.component";
 import { MemberEditComponent } from "./members/member-edit/member-edit.component";
 import { MemberListResolver } from "./_resolvers/member-list.resolver";
@@ -98,6 +99,7 @@ export class CustomHammerConfig extends HammerGestureConfig {
     MemberDetailResolver,
     MemberListResolver,
     MemberEditResolver,
+    ListsResolver,
     { provide: HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig }
   ],
   bootstrap: [AppComponent]
